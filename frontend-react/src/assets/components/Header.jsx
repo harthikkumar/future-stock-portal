@@ -19,6 +19,11 @@ const Header = () => {
     console.log('logged out')
     navigate('/login')
   }
+
+
+  const showdash  = ()=> {
+      navigate('/dashboard');
+  } 
   return (
     <>
         <nav className="navbar container pt-3 pb-3 align-item-center">
@@ -30,7 +35,11 @@ const Header = () => {
 
          <div>
             { isloggedin ? (
+              <>
               <button className='btn btn-danger' onClick={handleLogout}>logout</button>
+              &nbsp;
+              <button  className='btn btn-info' onClick={showdash}>Dashboard</button>
+              </>
             ):(
               <>
               <Button text='login' class ='btn-info'/>
