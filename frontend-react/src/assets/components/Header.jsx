@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
 
-export const Header = () => {
+const Header = () => {
   return (
     <>
         <nav className="navbar container pt-3 pb-3 align-item-center">
@@ -18,3 +18,6 @@ export const Header = () => {
     </>
   )
 }
+
+
+export default Header
